@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --green: #01996D;
+  --gray: #484848;
+  --black: #292929;
+  --darkGreen: #245852;
+  --white: #FFFFFF;
+
+}
+
+/* font-family: 'Lato', sans-serif; */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+
+button {
+  border-radius: 4px;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  cursor: pointer;
+  color: var(--white);
+  font-size: 20px;
+  font-family: 'Lato';
+}
+
+/* Header */
+
+.header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__rootlet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.nav {
+  margin-right: 113px;
+}
+
+.nav__flex {
+  display: flex;
+}
+
+.nav__flex>li {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 36px;
+}
+
+.nav__flex>li:last-child {
+  padding: 0 0 0 36px;
+}
+
+.nav__flex>li:first-child {
+  padding: 0 36px 0 0;
+}
+
+.nav__flex>li:hover {
+  color: var(--green)
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+}
+
+.sign__button {}
+
+.sign__sign-in {
+  font-size: 20px;
+  margin-right: 32px;
+}
+
+.sign__start-trial {
+  padding: 13px 49px;
+  text-transform: capitalize;
+}
+
+/* Section Post-header */
+.post-header {
+  min-height: 981px;
+  background: url('../img/header_bg.jpg') center / cover no-repeat;
+  background-position-y: 77px;
+  padding: 263px 0 0;
+}
+
+
+.post-header h1 {
+  font-size: 65px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #01996D;
+  margin-bottom: 30px;
+}
+
+.post-header p {
+  font-size: 20px;
+  max-width: 420px;
+  height: 123px;
+  margin-bottom: 15px;
+  color: var(--gray);
+  line-height: 144.5%;
+}
+
+.post-header__button {
+  padding: 20px 50px;
+  text-transform: capitalize;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--darkGreen);
+  padding: 95px 0;
+}
+
+.footer__logo {
+  margin-bottom: 60px;
+}
+
+.footer__nav li {
+  font-size: 25px;
+  color: var(--white);
+  margin-bottom: 60px;
+}
+
+.footer__nav li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__nav li:hover {
+  opacity: 0.7;
+}
