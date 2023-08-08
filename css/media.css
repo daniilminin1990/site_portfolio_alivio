@@ -184,6 +184,7 @@
 
   .our-product__img {
     max-width: 100%;
+    min-width: 350px;
   }
 }
 
